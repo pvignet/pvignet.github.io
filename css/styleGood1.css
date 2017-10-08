@@ -1,0 +1,5 @@
+/*#newname:focus, #newage:focus, #newoccupation:focus , #newgender{background-color:yellow;}*/
+input:focus {
+    background-color: yellow;
+}
+
