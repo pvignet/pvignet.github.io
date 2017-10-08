@@ -6,7 +6,7 @@ require_once 'src/autoload.php';
 $config = new ScientiaMobile\WurflCloud\Config();
 
 // here is where you will put your own WURFL Cloud API Key
-$config->api_key = 'XXXXXX:XXXXXXXXXXXXXXXXXXXXX';
+$config->api_key = '2147483647:qxLKrZ3h5iuTpXNAa14J03jwVu14LWLW';
 
 // we are creating here the WURFL Cloud Client
 $client = new ScientiaMobile\WurflCloud\Client($config);
@@ -15,7 +15,7 @@ $client = new ScientiaMobile\WurflCloud\Client($config);
 $client->detectDevice();
 
 // checking the capabilities that we are able to check
-if ($client->getDeviceCapability('can_assign_phone_number')) {
+if ($client->getDeviceCapability('is_mobile')) {
   echo "This is a mobile phone and you can call from it";
 } else {
   echo "This is not a mobile phone and you cannot call from it";
