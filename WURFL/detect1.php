@@ -11,7 +11,7 @@ require_once 'src/autoload.php';
 
 $config = new ScientiaMobile\WurflCloud\Config();
 
-$config->api_key = '598997:Z7GTvVjlzicfN3wo2Ba4yR0IMbO6eqp5';
+$config->api_key = '2147483647:qxLKrZ3h5iuTpXNAa14J03jwVu14LWLW';
 
 $client = new ScientiaMobile\WurflCloud\Client($config);
 
@@ -29,7 +29,7 @@ if ($client->getDeviceCapability('is_smartphone')): ?>
 <div style="width:90%; margin:0 auto; border:2px solid blue; background-color:cyan;">
 <?php
    foreach ($client->capabilities as $name => $value) {
-      if ($name == 'is_smartphone') {
+      if ($name == 'is_mobile') {
       echo "<strong>$name</strong>: ".(is_bool($value)? var_export($value, true): $value) ."<br>"; }
 	  }
 	  ?>
