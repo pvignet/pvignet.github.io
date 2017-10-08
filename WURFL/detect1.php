@@ -21,7 +21,7 @@ if ($client->getDeviceCapability('is_smartphone')): ?>
 <div style="width:100%; font-weight:bold; background-color:white;">
 <?php
    foreach ($client->capabilities as $name => $value) {
-      if ($name == 'is_smartphone') {
+      if ($name == 'is_mobile') {
       echo "<strong>$name</strong>: ".(is_bool($value)? var_export($value, true): $value) ."<br>"; }
 	  }
 	  ?>
